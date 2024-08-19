@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="asst/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>#7DaysOfCode</title>
+  </head>
+  <body>
+    <header id="header">
+      <h2 class="logo"><a href="#about">Edinson</a></h2>
+      <ul class="menu">
+        <li class="item"><a href="#diaUno">Día 1</a></li>
+        <li class="item"><a href="#about" onclick="diaDos()">Día 2</a></li>
+        <li class="item" id="abrir" >
+          <a href="#about" onclick="abrirVent()">Día 3</a>
+        </li>
+      </ul>
+    </header>
+    <div class="ventana" id="vent">
+      <a href=""></a><i class="fa-solid fa-circle-xmark" onclick="cerrarVent()"></i>
+      <h2>¿Cómo estas?</h2>
+      <form action="">
+        <input type="text" placeholder="Nombre">
+        <button>Enviar</button>
+        <button>Borrar</button>
+      </form>
+    </div>
+    <section class="container" id="about">
+      <article>
+        <h1 class="titulo"><strong class="dias"> #7Days </strong>OfCode</h1>
+        <p class="parrafoUno">
+          <strong><</strong> 🧑🏻‍💻 Desafíos de 7 días del curso <strong>ONE-Next Education de AluraLatam y Oracle </strong>😎<strong>/></strong><span class="bar">&#160;</span>
+        </p>
+        <span class="page-header__scroll" aria-hidden="true">
+          <span class="grupo">
+            <strong><span>S</span></strong>
+            <strong><span>C</span></strong>
+            <strong><span>R</span></strong>
+            <strong><span>O</span></strong>
+            <strong><span>L</span></strong>
+            <strong><span>L</span></strong>
+          </span></span
+        >
+        <div class="linea"></div>
+      </article>
+    </section>
+    <section id="diaUno">
+      <h2 class="subTitulo">Codeando Día 1</h2>
+      <pre>
+        <code>
+            <span class="keyword">let</span> numeroUn <span class="operator">=</span> <span class="number">1</span>;
+            <span class="keyword">let</span> stringUn <span class="operator">=</span> <span class="string">'1'</span>;
+            
+            <span class="keyword">let</span> numeroTreinta <span class="operator">=</span> <span class="number">30</span>;
+            <span class="keyword">let</span> stringTreinta <span class="operator">=</span> <span class="string">'30'</span>;
+            
+            <span class="keyword">let</span> numeroDiez <span class="operator">=</span> <span class="number">10</span>;
+            <span class="keyword">let</span> stringDiez <span class="operator">=</span> <span class="string">'10'</span>;
+            
+            <p class="comentario">//Bloque I  se utiliza == para comparar el mismo valor pero diferentes tipos.</p>
+            <span class="keyword">if</span> (numeroUn <span class="operator">==</span> stringUn) {
+                console.log(<span class="string">'Las variables numeroUn y stringUn tienen el mismo valor, pero tipos diferentes'</span>);
+            } <span class="keyword">else</span> {
+                console.log(<span class="string">'Las variables numeroUn y stringUn no tienen el mismo valor'</span>);
+            }
+            
+            <p class="comentario">//Bloque II se utiliza === para comparar tanto el valor como el tipo.</p>
+            <span class="keyword">if</span> (numeroTreinta <span class="operator">===</span> stringTreinta) {
+                console.log(<span class="string">'Las variables numeroTreinta y stringTreinta tienen el mismo valor y el mismo tipo'</span>);
+            } <span class="keyword">else</span> {
+                console.log(<span class="string">'Las variables numeroTreinta y stringTreinta no tienen el mismo tipo'</span>);
+            }
+            
+            <p class="comentario">//Bloque III  se utiliza == para comparar el mismo valor pero diferentes tipos.</p>
+            <span class="keyword">if</span> (numeroDiez <span class="operator">==</span> stringDiez) {
+                console.log(<span class="string">'Las variables numeroDiez y stringDiez tienen el mismo valor, pero tipos diferentes'</span>);
+            } <span class="keyword">else</span> {
+                console.log(<span class="string">'Las variables numeroDiez y stringDiez no tienen el mismo valor'</span>);
+            }
+        </code>
+      </pre>
+    </section>
+    <footer>
+      <section class="texto__footer">
+        <p>
+          Hecho por:
+          <span class="span__nombre">Edinson Javier Rosadio Carrilo </span>
+        </p>
+        <p>
+          Sigueme en mis redes:
+          <a href="https://github.com/EdinsonRC" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/edinson-rosadio-carrillo/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </p>
+      </section>
+    </footer>
+    <script src="diaDos.js"></script>
+    <script src="diaTres.js"></script>
+  </body>
+</html>
